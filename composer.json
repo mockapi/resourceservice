@@ -1,0 +1,38 @@
+{
+    "name": "mockapi/resourceservice",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Mockapi\\ResourceService\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/geraintluff/jsv4-php.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/interfaces.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/validate.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/resourceprovider.git"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*",
+        "mockapi/resourceprovider": "dev-master"
+    },
+    "require": {
+        "mockapi/interfaces": "dev-master",
+        "mockapi/validate": "dev-master",
+        "geraintluff/jsv4": "dev-master",
+        "oodle/inflect": "dev-master"
+    }
+}
